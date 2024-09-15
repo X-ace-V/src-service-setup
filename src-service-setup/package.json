@@ -1,0 +1,16 @@
+{
+  "name": "src-service-setup",
+  "version": "1.0.1",
+  "description": "Boilerplate for microservice setup",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node setup.js"
+  },
+  "author": "Vibhanshu Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "fs-extra": "^11.2.0"
+  }
+}
