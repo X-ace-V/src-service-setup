@@ -33,15 +33,11 @@ npm install src-service-setup
 
 ```
 
-## Setup
+## Server StartUp
 
-- After installation, you need to manually run the setup script to generate the folder structure and basic files in your project. Use the following code to trigger the setup inside a .js file:
+- you can start the server by writing this prompt in bash
 
-```bash
-const { setupMicroservice } = require('src-service-setup/setup');
-setupMicroservice();
 
-```
 
 ## Usage
 
@@ -78,6 +74,10 @@ project-directory/
 
 `node src/index.js`
 
+- or
+
+`npm start (as nodemon is already there for you)`
+
 - You should see the following output:
 
 `Server started on Port 3000`
@@ -89,6 +89,7 @@ project-directory/
 - `express`: Web framework for Node.js
 - `dotenv`: Loads environment variables from .env file
 - `fs-extra`: Module that extends the built-in fs module with additional methods
+- `nodemon`: Automatically restarts your Node.js server on file changes for faster development.
 
 ## License
 
@@ -97,3 +98,4 @@ project-directory/
 ## Author
 
 - Vibhanshu Kumar
+- Shivansh Tiwari

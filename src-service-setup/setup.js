@@ -1,6 +1,8 @@
 const fs = require('fs-extra');
 const path = require('path');
 
+console.log('Setup script is running...');
+
 //Directories structure
 const directories = [
     'src/config',
@@ -95,21 +97,25 @@ const files =  {
     }, null, 2)
 };
 
-const setupMicroservice = () => {
 
-    //Create directories
+try {
+    // Get the user's project directory
+    const userProjectDir = path.resolve(process.cwd(), '../..'); // Navigate up one level to the user's project
+
+    // Create directories    
     directories.forEach(dir => {
-        fs.ensureDirSync(path.join(process.cwd(), dir));
+        fs.ensureDirSync(path.join(userProjectDir, dir));
+        console.log(`Created directory: ${path.join(userProjectDir, dir)}`);
     });
 
-    //Create files with Defualt content
+    // Create files with default content
     Object.keys(files).forEach(file => {
-        fs.outputFileSync(path.join(process.cwd(), file), files[file]);
+        fs.outputFileSync(path.join(userProjectDir, file), files[file]);
+        console.log(`Created file: ${path.join(userProjectDir, file)}`);
     });
 
     console.log('MicroService Setup Completed!');
-}
-
-module.exports = {
-    setupMicroservice
+} catch (error) {
+    console.error('Error during setup:', error.message);
+    console.log('If the setup did not complete, please run `node setup.js` in your package folder.');
 }
