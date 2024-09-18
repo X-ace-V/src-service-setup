@@ -33,12 +33,6 @@ npm install src-service-setup
 
 ```
 
-## Server StartUp
-
-- you can start the server by writing this prompt in bash
-
-
-
 ## Usage
 
 - After running the installation command, you will find the following structure in your project:
@@ -74,10 +68,6 @@ project-directory/
 
 `node src/index.js`
 
-- or
-
-`npm start (as nodemon is already there for you)`
-
 - You should see the following output:
 
 `Server started on Port 3000`
@@ -89,7 +79,6 @@ project-directory/
 - `express`: Web framework for Node.js
 - `dotenv`: Loads environment variables from .env file
 - `fs-extra`: Module that extends the built-in fs module with additional methods
-- `nodemon`: Automatically restarts your Node.js server on file changes for faster development.
 
 ## License
 
