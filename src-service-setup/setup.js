@@ -5,6 +5,7 @@ const directories = [
     'src/config',
     'src/controllers',
     'src/migrations',
+    'src/middlewares',
     'src/models',
     'src/repository',
     'src/routes/v1',

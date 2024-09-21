@@ -9,6 +9,7 @@
 - Creates a standard folder structure for microservices:
   - `src/config`
   - `src/controllers`
+  - `src/middlewares`
   - `src/migrations`
   - `src/models`
   - `src/repository`
@@ -43,6 +44,7 @@ project-directory/
 ├── src/
 │   ├── config/
 │   ├── controllers/
+│   ├── middlewares/
 │   ├── migrations/
 │   ├── models/
 │   ├── repository/

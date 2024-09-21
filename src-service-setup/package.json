@@ -1,6 +1,6 @@
 {
   "name": "src-service-setup",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Boilerplate for microservice setup",
   "main": "index.js",
   "scripts": {
